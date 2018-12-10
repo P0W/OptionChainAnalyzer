@@ -10,7 +10,7 @@ public final class App {
 
         System.out.println("Parsing NSE Option Chain");
 
-        OptionChainGraph chart = new OptionChainGraph("BANKNIFTY");
+        OptionChainGraph chart = new OptionChainGraph("TCS");
 
         chart.pack();
         RefineryUtilities.centerFrameOnScreen(chart);

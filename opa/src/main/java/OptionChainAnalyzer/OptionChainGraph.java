@@ -16,7 +16,9 @@ import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 
 public class OptionChainGraph extends ApplicationFrame {
 
-    public OptionChainGraph( String symbol) {
+    private static final long serialVersionUID = 3309030821908837304L;
+
+    public OptionChainGraph(String symbol) {
         super("NSE Live Option Chain");
         JFreeChart xylineChart = ChartFactory.createXYLineChart("CALL V/S PUT Open Interest for " + symbol, "Strike Price", "Open Interest", createDataset(symbol),
                 PlotOrientation.VERTICAL, true, true, false);
